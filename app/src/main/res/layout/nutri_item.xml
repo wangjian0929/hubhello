@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/MainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:weightSum="3">
+            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:text=""
+                android:textSize="@dimen/_13sdp"
+                android:hint="Energy"
+                android:id="@+id/Suplliment"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                android:id="@+id/ServingsQuantity"
+                android:layout_weight="0.75"
+                android:layout_width="0dp"
+
+                android:textAlignment="viewEnd"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:text=""
+                android:hint="2881.5 kj"
+                android:layout_height="wrap_content"/>
+            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                android:layout_weight="0.75"
+                android:layout_width="0dp"
+                android:textAlignment="viewEnd"
+                android:id="@+id/PerGrams"
+                android:layout_marginEnd="@dimen/_1sdp"
+                android:text=""
+                android:hint="550.6 KJ"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+</RelativeLayout>

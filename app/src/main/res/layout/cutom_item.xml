@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:text="Jan"
+        android:id="@+id/btnjan"
+        android:tag="1"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:fontFamily="@font/avenir_medium"
+        android:focusable="true"/>
+</RelativeLayout>

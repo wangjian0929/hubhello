@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/dropdown"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/popuplayout"
+        android:background="@color/tranparent_background"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/HideLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/Week"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="Week View"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/Checkedone"
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/checkmark"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_weight="0.2"
+                    android:background="@color/view_Color" />
+
+                <LinearLayout
+                    android:id="@+id/Month"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="Month View"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/Checkedtwo"
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/checkmark"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="?android:attr/listPreferredItemHeight"-->
+    <!--android:background="@android:drawable/list_selector_background"-->
+    <!--android:orientation="vertical"-->
+    <!--android:padding="@dimen/_3sdp">-->
+    <!--<RelativeLayout-->
+    <!--android:layout_marginTop="@dimen/_15sdp"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:background="@color/white"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginEnd="@dimen/_5sdp">-->
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/PopUpText"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/WeekLayout"-->
+    <!--android:layout_width="@dimen/_80sdp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+    <!--<FontTextView_SemiBold-->
+    <!--android:id="@+id/Week"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Week View"-->
+    <!--android:textSize="@dimen/_11sdp"-->
+    <!--android:padding="@dimen/_5sdp"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+    <!--tools:ignore="HardcodedText"/>-->
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_toEndOf="@+id/Week"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/Checkedone"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:src="@drawable/checkmark"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="@dimen/_12sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="@dimen/_12sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:visibility="visible"/>&ndash;&gt;-->
+    <!--</RelativeLayout>-->
+    <!--<RelativeLayout-->
+    <!--android:layout_below="@+id/WeekLayout"-->
+    <!--android:layout_width="@dimen/_80sdp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+    <!--<FontTextView_SemiBold-->
+    <!--android:id="@+id/Month"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="@dimen/_11sdp"-->
+    <!--android:padding="@dimen/_5sdp"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:text="Month View"-->
+    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+    <!--tools:ignore="HardcodedText"/>-->
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_toEndOf="@+id/Month"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/Checkedtwo"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:src="@drawable/checkmark"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="0.1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="@dimen/_12sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="@dimen/_12sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:visibility="visible"/>&ndash;&gt;-->
+    <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
+    <!--<RelativeLayout-->
+    <!--android:layout_toEndOf="@+id/PopUpText"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<RadioGroup-->
+    <!--android:id="@+id/radioGroup"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+    <!--<RadioButton-->
+    <!--android:id="@+id/RadioYes"-->
+    <!--android:layout_weight="1"-->
+    <!--style="@style/radio_button_custom_style" />-->
+    <!--<RadioButton-->
+    <!--android:id="@+id/RadioNo"-->
+    <!--android:layout_weight="1"-->
+    <!--style="@style/radio_button_custom_style"/>-->
+    <!--</RadioGroup>-->
+    <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->

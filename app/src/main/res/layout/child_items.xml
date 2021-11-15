@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/layoutEvent"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+            android:id="@+id/textAllergy"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:text="Chocolate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.suke.widget.SwitchButton
+            android:layout_alignParentEnd="true"
+            android:id="@+id/switchAllergy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:sb_show_indicator="false"
+            app:sb_checked="true"
+            app:sb_checked_color="@color/swich_color"
+            />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_below="@+id/layoutEvent"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:textSize="@dimen/_11sdp"
+        android:padding="@dimen/_8sdp"
+        android:id="@+id/textComment"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLines="1"
+        android:hint="Comment"
+        android:background="@drawable/profile_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:fontFamily="@font/avenirltstd_book"/>
+
+
+    <View
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_below="@+id/textComment"
+        android:id="@+id/viewborder"
+        android:background="@color/view_Color"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+</RelativeLayout>

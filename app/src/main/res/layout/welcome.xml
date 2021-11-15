@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/bg"
+        android:background="@drawable/welcomebg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:id="@+id/welcomeview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.feedAustralia.android.LanguageFont.FontTextView_Bold
+                android:id="@+id/welcome"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/white"
+
+                android:text="Welcome to"
+                android:textSize="@dimen/_30sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/Logo"
+                android:src="@drawable/logo"
+                android:scaleType="fitCenter"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_45sdp"/>
+
+
+            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:id="@+id/staticText"
+                android:text=""
+                android:textSize="@dimen/_14sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+
+        android:layout_below="@+id/welcomeview"
+        android:layout_height="@dimen/_30sdp">
+
+
+        <com.feedAustralia.android.LanguageFont.FontTextView_Bold
+            android:textColor="@color/white"
+            android:text="LOGIN    "
+            android:id="@+id/loginView"
+            android:layout_centerVertical="true"
+            android:textAlignment="viewEnd"
+            android:textSize="@dimen/_14sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/nextIcon"
+            android:src="@drawable/nexticon"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:tint="@color/white"
+            android:adjustViewBounds="true"
+            android:layout_width="@dimen/_13sdp"
+            android:layout_height="@dimen/_13sdp"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

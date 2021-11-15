@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="button_color">#91ce0c</color>
+    <color name="text_color">#9b9b9b</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="edit_background">#7f91ce0c</color>
+
+    <color name="edit_background1">#4D91CE0C</color>
+
+    <color name="dark_green">#91ce0c</color>
+    <color name="view_Color">#19000000</color>
+    <color name="logout_Color">#009a2d</color>
+    <color name="bgBottomNavigation">#ffffff</color>
+    <color name="bottom_color">#666666</color>
+    <color name="bottom_view_color">#c4c4c4</color>
+    <color name="Selected_color">#f4fae8</color>
+    <color name="description_color">#2e2e2e</color>
+    <color name="sick_green">#91ce0c</color>
+    <color name="calender_background">#979797</color>
+    <color name="view_color">#c7c7cc</color>
+    <color name="border_color">#d2d2d2</color>
+
+    <color name="darked_green">#028d22</color>
+    <color name="item_color">#0a90ce0b</color>
+    <color name="veg_color">#fa9b3d</color>
+    <color name="dairy_color">#75298c</color>
+    <color name="title_color">#ff3a31</color>
+    <color name="meat_color">#0073b6</color>
+    <color name="vegetable_color">#009c4c</color>
+    <color name="item_view_color">#F3F3F3</color>
+    <color name="tranparent_background">#7A000000</color>
+    <color name="tranparent_background1">#4D000000</color>
+
+    <color name="warm_grey">#9f9f9f</color>
+    <color name="month_grey">#424242</color>
+    <color name="month_selection">#F5FAE8</color>
+    <color name="fruit_Color">#8cbd50</color>
+    <color name="tranparent_bg">#FAFAFA</color>
+    <color name="tranparent_bg1">#00FAFAFA</color>
+    <color name="green">#4ad24d</color>
+    <color name="light_text">#b6b6b6</color>
+    <color name="light_green">#3e5678</color>
+    <color name="textBackground">#eceef0</color>
+    <color name="green_text">#203a5e</color>
+    <color name="swich_color">#4cd964</color>
+    <color name="swichoff_color">#FB0E1B</color>
+
+    <color name="arrow_color">#cdcdcd</color>
+
+</resources>

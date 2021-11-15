@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/layoutChild"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+            android:textSize="@dimen/_13sdp"
+            android:hint=""
+            android:layout_centerVertical="true"
+            android:id="@+id/textChild"
+            android:text="te"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/imageChild"
+            android:rotation="180"
+            android:backgroundTint="@color/arrow_color"
+            android:background="@drawable/backbutton"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_15sdp"/>
+    </RelativeLayout>
+    <View
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_below="@+id/layoutChild"
+        android:background="@color/border_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</RelativeLayout>

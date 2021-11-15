@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/itemlayout"
+    android:layout_margin="@dimen/_5sdp">
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:scaleType="fitXY"/>
+    <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+        android:layout_below="@+id/imageItem"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Cheese Burger"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/black"/>
+</RelativeLayout>
+

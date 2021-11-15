@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">feedAustralia</string>
+    <string name="menu">Menu</string>
+    <string name="menu_Ideas">Menu Ideas</string>
+    <string name="eating_habit">Eating Habits</string>
+    <string name="analytics_tab">Analytics</string>
+    <string name="meat_alternatives"><![CDATA[Meat & Alternatives]]></string>
+    <string name="description"> "1.Heat the oil in a large pan, add the onion, carrot, celery and crushed garlic. Stir fry for about 5 minutes. \n2.Add the minced beef and stir fry until meat is brown. This will take 5 \u2013 10 minutes. \n3.Add the tomato paste, mixed herbs and tomatoes. \n4.Simmer gently for 15 minutes then fold through chopped fresh parsley and simmer for a further 5 minutes. \n5.While the meat is cooking, cook spaghetti. \n\nServe: serve with salad.\n\nPreparation time: 30 minutes\nCooking time: 45 minutes",</string>
+    <string name="per_serve_per_child">Per Serve/\nPer Child</string>
+    <string name="per_child">"Per Child</string>
+
+
+
+
+
+</resources>

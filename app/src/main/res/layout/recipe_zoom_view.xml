@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_zoom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/burger"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/app_name"/>
+    <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+        android:layout_alignParentBottom="true"
+        android:id="@+id/Title"
+        android:text=""
+        android:hint=""
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@color/tranparent_background"
+        android:padding="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/FragmentOut"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:filterTouchesWhenObscured="true"
+    android:focusableInTouchMode="true">
+
+
+    <RelativeLayout
+        android:id="@+id/HeaderLayout"
+        android:background="@color/sick_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="@dimen/_13sdp"
+            android:layout_height="@dimen/_19sdp"
+            android:layout_alignTop="@+id/Logo"
+
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_minus10sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:src="@drawable/backbutton" />
+
+        <ImageView
+            android:id="@+id/Logo"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/backBtn"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_35sdp"/>
+        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="Menu"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/profileImageLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/_35sdp">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/avtar"
+
+                android:layout_centerVertical="true"
+                app:civ_border_width="@dimen/_1sdp"
+                app:civ_border_color="@color/white"/>
+
+            <ImageView
+                android:id="@+id/settings"
+                android:src="@drawable/settinges"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"/>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/multiserviceview"
+        android:layout_below="@+id/HeaderLayout"
+        android:visibility="visible">
+        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+            android:id="@+id/serviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:padding="@dimen/_7sdp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+        <ImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/dropdown"
+            android:backgroundTint="@color/warm_grey" />
+
+        <View
+            android:layout_below="@+id/serviceName"
+            android:background="@color/border_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/fullview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/multiserviceview"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/HeaderCalnder"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:padding="@dimen/_3sdp"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <com.feedAustralia.android.LanguageFont.FontTextView_Bold
+                android:text="Week's Menu"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/GetView"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:padding="@dimen/_1sdp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/darked_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="avenir_medium"/>
+            <RelativeLayout
+                android:id="@+id/calendarIcon"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_3sdp">
+                <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_centerVertical="true"
+                    android:textAlignment="viewEnd"
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:layout_toStartOf="@+id/imagecalanderweek"
+                    android:id="@+id/monthname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/imagecalanderweek"
+                    android:visibility="visible"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:backgroundTint="@color/calender_background"
+                    android:background="@drawable/calendar"
+                    android:adjustViewBounds="true"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HeaderCalnder">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/view_color">
+            </View>
+        </RelativeLayout>
+        <android.support.v4.widget.NestedScrollView
+            android:layout_below="@+id/line"
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1sdp"
+            android:visibility="visible">
+            <LinearLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <LinearLayout
+                    android:id="@+id/layoutCalander"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone"
+                    android:background="#ffffff">
+
+                    <com.feedAustralia.android.utilCalender.CalendarView
+                        android:id="@+id/calendarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:textsize="@dimen/_80sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        app:backgroundColor="@color/white"
+                        app:textColor="@color/black"
+                        app:selectedCircleColor="@color/sick_green"
+                        app:weekDaysNamesColor="@color/calender_background"
+                        app:currentDayCircleColor="@color/sick_green"/>
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/RatingLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <!--<View-->
+                        <!--android:background="@color/view_color"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:visibility="visible"-->
+                        <!--android:layout_height="1dp"/>-->
+
+                    <TextView
+                        android:text="Daily Menu"
+                        android:textSize="@dimen/_12sdp"
+                        android:padding="@dimen/_3sdp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/darked_green"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="avenir_medium"/>
+                    <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                        android:text=""
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:padding="@dimen/_3sdp"
+                        android:id="@+id/PacifDate"
+                        android:textColorHint="@color/black"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="@dimen/_12sdp"
+                        android:hint=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/CustomRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:layout_marginEnd="@dimen/_1sdp"
+                        android:numStars="5"
+                        android:rating="0"
+                        android:isIndicator="true"
+                        android:stepSize="0.05"/>
+                </RelativeLayout>
+                <View
+                    android:id="@+id/Viewed"
+                    android:background="@color/view_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="gone"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview1"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+                <LinearLayout
+                    android:id="@+id/secondLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <LinearLayout
+                        android:id="@+id/allergyLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                                android:id="@+id/Allergies"
+                                android:layout_width="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:text=""
+                                android:layout_centerVertical="true"
+                                android:hint="Allergies"
+                                android:textSize="@dimen/_13sdp"
+                                android:textColorHint="@color/darked_green"
+                                android:textColor="@color/darked_green"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_height="wrap_content"/>
+                            <com.feedAustralia.android.LanguageFont.FontTextView_Bold
+                                android:id="@+id/allergyquantity"
+                                android:layout_width="wrap_content"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_alignParentEnd="true"
+                                android:textSize="@dimen/_14sdp"
+                                android:text=""
+                                android:gravity="center_vertical"
+                                android:layout_centerVertical="true"
+                                android:hint="0"
+                                android:textColorHint="@color/title_color"
+                                android:textColor="@color/title_color"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+                        <View
+                            android:background="@color/view_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textSize="@dimen/_12sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:id="@+id/ServingsPer"
+                            android:textColor="@color/button_color"
+                            android:text="Servings per food group (Actual Servings)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                                android:id="@+id/Meat"
+                                android:layout_width="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:text=""
+                                android:hint="@string/meat_alternatives"
+                                android:textSize="@dimen/_11sdp"
+                                android:textColorHint="@color/meat_color"
+                                android:textColor="@color/meat_color"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_height="wrap_content"/>
+                            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                                android:id="@+id/meatquantity"
+                                android:layout_width="wrap_content"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_alignParentEnd="true"
+                                android:textSize="@dimen/_11sdp"
+                                android:text=""
+                                android:hint="0.8"
+                                android:textColorHint="@color/black"
+                                android:textColor="@color/black"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:background="@color/item_view_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                                android:id="@+id/Dairy"
+                                android:layout_width="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:text=""
+                                android:hint="Dairy foods"
+                                android:textSize="@dimen/_11sdp"
+                                android:textColorHint="@color/dairy_color"
+                                android:textColor="@color/dairy_color"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_height="wrap_content"/>
+                            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                                android:id="@+id/Dairyquantity"
+                                android:layout_width="wrap_content"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_alignParentEnd="true"
+                                android:textSize="@dimen/_11sdp"
+                                android:text=""
+                                android:hint="1"
+                                android:textColorHint="@color/black"
+                                android:textColor="@color/black"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                                android:id="@+id/Bread"
+                                android:layout_width="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:text=""
+                                android:hint="Bread, Cereals, Rice and Pasta"
+                                android:textSize="@dimen/_11sdp"
+                                android:textColorHint="@color/veg_color"
+                                android:textColor="@color/veg_color"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_height="wrap_content"/>
+                            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                                android:id="@+id/Breadquantity"
+                                android:layout_width="wrap_content"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_alignParentEnd="true"
+                                android:textSize="@dimen/_11sdp"
+                                android:text=""
+                                android:hint="2.3"
+                                android:textColorHint="@color/black"
+                                android:textColor="@color/black"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:background="@color/item_view_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                                android:id="@+id/Fruit"
+                                android:layout_width="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:text=""
+                                android:hint="Fruit"
+                                android:textSize="@dimen/_11sdp"
+                                android:textColorHint="@color/button_color"
+                                android:textColor="@color/button_color"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_height="wrap_content"/>
+                            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                                android:id="@+id/Fruitquantity"
+                                android:layout_width="wrap_content"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_alignParentEnd="true"
+                                android:textSize="@dimen/_11sdp"
+                                android:text="0"
+                                android:hint=""
+                                android:textColorHint="@color/black"
+                                android:textColor="@color/black"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                                android:id="@+id/Vegetables"
+                                android:layout_width="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:text=""
+                                android:hint="Vegetables"
+                                android:textSize="@dimen/_11sdp"
+                                android:textColorHint="@color/vegetable_color"
+                                android:textColor="@color/vegetable_color"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_height="wrap_content"/>
+                            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                                android:id="@+id/Vegetablesquantity"
+                                android:layout_width="wrap_content"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_alignParentEnd="true"
+                                android:textSize="@dimen/_11sdp"
+                                android:text=""
+                                android:hint="2.9"
+                                android:textColorHint="@color/black"
+                                android:textColor="@color/black"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <!--<View-->
+                    <!--android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--android:background="@color/view_color"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"/>-->
+                    <com.feedAustralia.android.LanguageFont.FontTextView_Bold
+                        android:padding="@dimen/_5sdp"
+                        android:text="Daily Nutrient Totals"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/darked_green"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:orientation="horizontal"
+                        android:background="@color/item_color"
+                        android:weightSum="3">
+                        <TextView
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+                        <RelativeLayout
+                            android:layout_weight="0.80"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+                            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                                android:id="@+id/Text1"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:textAlignment="viewStart"
+                                android:text="@string/per_serve_per_child"
+                                android:textColor="@color/sick_green"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_height="wrap_content"/>
+                            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                                android:layout_below="@+id/Text1"
+                                android:layout_width="wrap_content"
+                                android:textAlignment="viewEnd"
+                                android:layout_alignParentEnd="true"
+                                android:text="@string/per_child"
+                                android:layout_marginEnd="@dimen/_7sdp"
+                                android:visibility="gone"
+                                android:textColor="@color/sick_green"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_height="@dimen/_15sdp"/>
+                        </RelativeLayout>
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="0.75"
+                            android:layout_width="0dp"
+                            android:textAlignment="center"
+                            android:layout_marginEnd="@dimen/_1sdp"
+                            android:text="Per 100g"
+                            android:textColor="@color/sick_green"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:layout_marginTop="@dimen/_4sdp"-->
+                    <!--android:id="@+id/recyclerView4"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--</android.support.v7.widget.RecyclerView>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:orientation="horizontal"
+                        android:background="@color/white"
+                        android:weightSum="3">
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:text="Energy"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:id="@+id/energyPerChild"
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="0.75"
+                            android:text="2881.5 kj"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="0.75"
+                            android:layout_width="0dp"
+                            android:textAlignment="viewEnd"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:id="@+id/energy100g"
+                            android:text="550.6 KJ"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/item_view_color"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:weightSum="3">
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:text="Protein"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="0.75"
+                            android:layout_width="0dp"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/black"
+                            android:id="@+id/proteinPerChild"
+                            android:textSize="@dimen/_11sdp"
+                            android:text="28.4 g"
+                            android:layout_height="wrap_content"/>
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="0.75"
+                            android:layout_width="0dp"
+                            android:textAlignment="viewEnd"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:id="@+id/protein100g"
+                            android:text="4.1 g"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/white"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:weightSum="3">
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:text="Fat - total"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="0.75"
+                            android:layout_width="0dp"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/black"
+                            android:id="@+id/fatTotalPerChild"
+                            android:textSize="@dimen/_11sdp"
+                            android:text="16.3 g"
+                            android:layout_height="wrap_content"/>
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="0.75"
+                            android:layout_width="0dp"
+                            android:textAlignment="viewEnd"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:text="3.5 g"
+                            android:id="@+id/fat100g"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/item_view_color"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:weightSum="3">
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:text="Carbohydrate - total"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="0.75"
+                            android:layout_width="0dp"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/black"
+                            android:id="@+id/carbohydrateTotalPerChild"
+                            android:textSize="@dimen/_11sdp"
+                            android:text="95.6 g"
+                            android:layout_height="wrap_content"/>
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="0.75"
+                            android:layout_width="0dp"
+                            android:textAlignment="viewEnd"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:text="18.9 g"
+                            android:textColor="@color/black"
+                            android:id="@+id/carbohydrate100g"
+                            android:textSize="@dimen/_11sdp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/white"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:weightSum="3">
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:text="Carbohydrate - Sugar"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="0.75"
+                            android:layout_width="0dp"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/black"
+                            android:id="@+id/carbohydrateSugarPerChild"
+                            android:textSize="@dimen/_11sdp"
+                            android:text="45.5 g"
+                            android:layout_height="wrap_content"/>
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="0.75"
+                            android:layout_width="0dp"
+                            android:textAlignment="viewEnd"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:text="8.2 g"
+                            android:textColor="@color/black"
+                            android:id="@+id/carbohydrateSugar100g"
+                            android:textSize="@dimen/_11sdp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/item_view_color"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:weightSum="3">
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:text="Sodium"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="0.75"
+                            android:layout_width="0dp"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/black"
+                            android:id="@+id/SodiumPerChild"
+                            android:textSize="@dimen/_11sdp"
+                            android:text="769.2 g"
+                            android:layout_height="wrap_content"/>
+                        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                            android:layout_weight="0.75"
+                            android:layout_width="0dp"
+                            android:textAlignment="viewEnd"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:text="131.0 g"
+                            android:textColor="@color/black"
+                            android:id="@+id/sodium100g"
+                            android:textSize="@dimen/_11sdp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/support_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/line"
+            android:visibility="gone">
+            <include layout="@layout/monthcalendar"
+                android:id="@+id/monthview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+            android:text="No data found"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:background="@color/sick_green"
+            android:id="@+id/errornodata"
+            android:paddingTop="@dimen/_100sdp"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_13sdp"
+            android:hint=""
+            android:padding="@dimen/_10sdp"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/fullview"
+        android:layout_marginTop="@dimen/_10sdp"
+        >
+        <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+            android:text="Your Service has not published a menu for this date"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:id="@+id/nodatamonthtext"
+            android:background="@color/sick_green"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_13sdp"
+            android:hint=""
+            android:padding="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <pl.droidsonroids.gif.GifTextView
+            android:id="@+id/loading"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:background="@drawable/loadingbig"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tranparent_background1"
+        android:visibility="gone"
+        android:id="@+id/weekCalendarView"
+        android:layout_below="@id/HeaderLayout"
+        >
+
+        <com.archit.calendardaterangepicker.customviews.DateRangeCalendarView
+            android:id="@+id/weekCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+
+            custom:range_color="@color/edit_background1"
+            custom:title_color = "@color/black"
+            custom:selected_date_circle_color="@color/tranparent_bg1"
+            custom:selected_date_color="@color/white"
+            custom:range_date_color="@color/black"
+            custom:text_size_title="@dimen/_15sdp"
+            custom:text_size_date="@dimen/_15sdp"
+
+
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/childLayout"
+        android:background="@color/white"
+        android:layout_below="@+id/HeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/viewRecylerMultipleChild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tranparent_background1"
+        android:visibility="gone"
+        android:id="@+id/multiservicelayout"
+        android:layout_below="@+id/multiserviceview"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/multiServiceRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+

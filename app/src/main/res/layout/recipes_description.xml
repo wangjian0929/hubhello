@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:filterTouchesWhenObscured="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sick_green">
+        <RelativeLayout
+            android:id="@+id/ViewLayout"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_centerVertical="true"
+                android:id="@+id/Back"
+                android:background="@drawable/backbutton"
+                android:backgroundTint="@color/white"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_15sdp"/>
+            <com.feedAustralia.android.LanguageFont.FontTextView_SemiBold
+                android:textSize="@dimen/_13sdp"
+                android:layout_toEndOf="@+id/Back"
+                android:layout_marginStart="@dimen/_minus5sdp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:text="Recipes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <com.ecloud.pulltozoomview.PullToZoomScrollViewEx
+        android:id="@+id/scroll_view"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.ecloud.pulltozoomview.PullToZoomScrollViewEx>
+
+</LinearLayout>

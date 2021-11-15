@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="#ffffff">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_text">
+        </View>
+        <com.feedAustralia.android.CustomScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/myScroll">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_20sdp">
+                <com.feedAustralia.android.UtilCalander.CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:backgroundColor="#ffffff" />
+            </LinearLayout>
+        </com.feedAustralia.android.CustomScrollView>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/CalenderListener">-->
+    <!--<CalendarView-->
+        <!--android:layout_marginTop="@dimen/_45sdp"-->
+        <!--android:visibility="visible"-->
+        <!--android:id="@+id/calendarView"-->
+        <!--android:background="@color/white"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:dateTextAppearance="@style/CalenderViewDateCustomText"-->
+        <!--android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"-->
+        <!--android:focusedMonthDateColor="@color/black">-->
+    <!--</CalendarView>-->
+
+<!--</RelativeLayout>-->
